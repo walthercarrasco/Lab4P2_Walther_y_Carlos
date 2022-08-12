@@ -9,9 +9,7 @@ public class Piezas {
         return temporal;
     }
     
-    public String[][] llenado(String[][] tablero){
-        String[][] tablero = new String[9][9];
-        
+    public String[][] llenado(String[][] tablero){        
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 tablero[i][j] = "[ ]";
