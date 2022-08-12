@@ -66,13 +66,9 @@ public class Ajedrez {
                 num2 += num_2;
                 int y_2 = Integer.parseInt(num2);
                 int x_2 = posicion(letra2);
-                System.out.println(y_1);
-                System.out.println(x_1);
-                System.out.println(y_2);
-                System.out.println(x_2);
+
                 
                 if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno) == true){
-                    System.out.println("aaaaaa");
                     tablero[y_2][x_2] = tablero[y_1][x_1];
                     tablero[y_1][x_1] = null;
                     turno = false;
