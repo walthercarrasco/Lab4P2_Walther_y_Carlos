@@ -12,7 +12,7 @@ public class Arfil extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov, Object[][] tablero, int x, int y, int x2, int y2) {
+    public boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2) {
         return true;
     }
     

@@ -49,6 +49,6 @@ public abstract class Piezas {
         this.color = color;
     }
     
-    public abstract boolean verifica(String mov, Object[][] tablero, int x, int y, int x2, int y2);
+    public abstract boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2);
    
 }

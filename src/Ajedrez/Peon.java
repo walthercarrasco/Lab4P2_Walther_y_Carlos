@@ -14,7 +14,7 @@ public class Peon extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov, Object[][] tablero, int x, int y, int x2, int y2) {
+    public boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2) {
         char l1 = mov.charAt(0);
         char l2 = mov.charAt(1);
         char l3 = mov.charAt(4);

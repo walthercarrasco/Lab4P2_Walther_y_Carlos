@@ -12,7 +12,7 @@ public class Dama extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov, Object[][] tablero, int x, int y, int x2, int y2) {
+    public boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
