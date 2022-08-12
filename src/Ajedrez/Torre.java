@@ -18,17 +18,15 @@ public class Torre extends Piezas{
         char l2 = mov.charAt(1);
         char l3 = mov.charAt(4);
         if(turno == true){
-            if((l1 == 'r' || l1 == 'R') && tablero[y][x] instanceof Torre){
+            if(( l1 == 'R') && tablero[y][x] instanceof Torre){
                 if(l2 == '|' && l3 == '-'){
                     if(x == x2){
                         if(y > y2){
                             while(y != y2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 y2++;
                             }
@@ -36,10 +34,8 @@ public class Torre extends Piezas{
                             while(y != y2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 y2--;
 
@@ -50,10 +46,8 @@ public class Torre extends Piezas{
                             while(x != x2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 x2++;
                             }
@@ -77,17 +71,15 @@ public class Torre extends Piezas{
                 temporal = false;
             }
         }else{
-            if((l1 == 'r' || l1 == 'R') && tablero[y][x] instanceof Torre){
+            if((l1 == 'r' ) && tablero[y][x] instanceof Torre){
                 if(l2 == '|' && l3 == '-'){
                     if(x == x2){
                         if(y > y2){
                             while(y != y2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 y2++;
                             }
@@ -95,10 +87,8 @@ public class Torre extends Piezas{
                             while(y != y2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 y2--;
 
@@ -109,10 +99,8 @@ public class Torre extends Piezas{
                             while(x != x2){
 
                                 if(tablero[y2][x2] == null){
-                                    System.out.println("eeeeeeeeeeeeeee");
                                 }else{
                                     temporal = false;
-                                    System.out.println("AAAAAAAAAAAAAA");
                                 }
                                 x2++;
                             }

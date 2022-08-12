@@ -25,7 +25,7 @@ public class Ajedrez {
                 tablero[i][j] = null;
             }
         }
-        
+        System.out.println("Solo pudimos terminar torre y peones ");
         tablero[0][3] = new Dama('q', 3, 0, false);
         tablero[0][4] = new Rey('k', 4, 0, false);
         tablero[0][2] = new Arfil('b', 2, 0, false);
@@ -34,9 +34,9 @@ public class Ajedrez {
         tablero[0][6] = new Caballo('n', 6, 0, false);
         tablero[0][0] = new Torre('r', 0, 0, false);
         tablero[0][7] = new Torre('r', 7, 0, false);
-        for (int i = 0; i < 8; i++) {
+        /*for (int i = 0; i < 8; i++) {
             tablero[1][i] = new Peon('p', i, 1, false);
-        }
+        }*/
         tablero[7][3] = new Dama('Q', 3, 7, true);
         tablero[7][4] = new Rey('K', 4, 7, true);
         tablero[7][2] = new Arfil('B', 2, 7, true);
@@ -45,9 +45,9 @@ public class Ajedrez {
         tablero[7][6] = new Caballo('N', 6, 7, true);
         tablero[7][0] = new Torre('R', 0, 7, true);
         tablero[7][7] = new Torre('R', 7, 7, true);
-        for (int i = 0; i < 8; i++) {
+        /*for (int i = 0; i < 8; i++) {
             tablero[6][i] = new Peon('P', i, 6, false);
-        }
+        }*/
         while(salida == true){
             Imprimir(tablero);
             if(turno == true){
