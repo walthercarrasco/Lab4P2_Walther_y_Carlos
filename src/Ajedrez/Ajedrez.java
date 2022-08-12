@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ajedrez {
     
     public static void main(String[] args) {
+        System.out.println("DATO IMPORTANTE!!!");
+        System.out.println("DATO CURIOSO PARA NUILA xd: El origen de la frase jaque mate proviene de la lengua persa y alude a que el rey se encuentra atrapado o no tiene escapatoria. Esto, en el ajedrez, implica perder el juego.");
+        
         Scanner lea = new Scanner(System.in);
         System.out.println("Jugador #1: ");
         String jugador1 = lea.next();

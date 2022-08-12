@@ -17,63 +17,124 @@ public class Torre extends Piezas{
         char l1 = mov.charAt(0);
         char l2 = mov.charAt(1);
         char l3 = mov.charAt(4);
-        if((l1 == 'r' || l1 == 'R') && tablero[y][x] instanceof Torre){
-            if(l2 == '|' && l3 == '-'){
-                if(x == x2){
-                    if(y > y2){
-                        while(y != y2){
-                            
-                            if(tablero[y2][x2] == null){
-                                System.out.println("eeeeeeeeeeeeeee");
-                            }else{
-                                temporal = false;
-                                System.out.println("AAAAAAAAAAAAAA");
-                            }
-                            y2++;
-                        }
-                    }else{
-                        while(y != y2){
-                            
-                            if(tablero[y2][x2] == null){
-                                System.out.println("eeeeeeeeeeeeeee");
-                            }else{
-                                temporal = false;
-                                System.out.println("AAAAAAAAAAAAAA");
-                            }
-                            y2--;
+        if(turno == true){
+            if((l1 == 'r' || l1 == 'R') && tablero[y][x] instanceof Torre){
+                if(l2 == '|' && l3 == '-'){
+                    if(x == x2){
+                        if(y > y2){
+                            while(y != y2){
 
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                y2++;
+                            }
+                        }else{
+                            while(y != y2){
+
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                y2--;
+
+                            }
+                        }
+                    }else if(y == y2){
+                        if(x > x2){
+                            while(x != x2){
+
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                x2++;
+                            }
+                        }else{
+                            while(x != x2){
+
+                                if(tablero[y2][x2] == null){
+                                }else{
+                                    temporal = false;
+                                }
+                                x2--;
+
+                            }
                         }
                     }
-                }else if(y == y2){
-                    if(x > x2){
-                        while(x != x2){
-                           
-                            if(tablero[y2][x2] == null){
-                                System.out.println("eeeeeeeeeeeeeee");
-                            }else{
-                                temporal = false;
-                                System.out.println("AAAAAAAAAAAAAA");
-                            }
-                            x2++;
-                        }
-                    }else{
-                        while(x != x2){
-                            
-                            if(tablero[y2][x2] == null){
-                            }else{
-                                temporal = false;
-                            }
-                            x2--;
 
-                        }
-                    }
+                }else{
+                    temporal = false;
                 }
-                
             }else{
                 temporal = false;
             }
         }else{
-            temporal = false;
+            if((l1 == 'r' || l1 == 'R') && tablero[y][x] instanceof Torre){
+                if(l2 == '|' && l3 == '-'){
+                    if(x == x2){
+                        if(y > y2){
+                            while(y != y2){
+
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                y2++;
+                            }
+                        }else{
+                            while(y != y2){
+
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                y2--;
+
+                            }
+                        }
+                    }else if(y == y2){
+                        if(x > x2){
+                            while(x != x2){
+
+                                if(tablero[y2][x2] == null){
+                                    System.out.println("eeeeeeeeeeeeeee");
+                                }else{
+                                    temporal = false;
+                                    System.out.println("AAAAAAAAAAAAAA");
+                                }
+                                x2++;
+                            }
+                        }else{
+                            while(x != x2){
+
+                                if(tablero[y2][x2] == null){
+                                }else{
+                                    temporal = false;
+                                }
+                                x2--;
+
+                            }
+                        }
+                    }
+
+                }else{
+                    temporal = false;
+                }
+            }else{
+                temporal = false;
+            }
         }
         return temporal;
     }    
