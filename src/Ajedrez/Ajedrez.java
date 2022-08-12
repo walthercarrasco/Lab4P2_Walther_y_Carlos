@@ -46,9 +46,8 @@ public class Ajedrez {
             tablero[6][i] = new Peon('P', i, 6, false);
         }
         while(salida == true){
-            
+            Imprimir(tablero);
             if(turno = true){
-                Imprimir(tablero);
                 System.out.print(jugador1+" ingrese el movimiento a realizar: ");
                 String mov = lea.next();
                 String num1 = "";
@@ -73,9 +72,14 @@ public class Ajedrez {
                 System.out.println(x_2);
                 
                 if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno) == true){
+<<<<<<< HEAD
                     System.out.println("aaaaaa");
                     tablero[y_1][x_1]= null;
                     tablero[y_2][x_2]= new Torre(p1, x_2, y_2, turno);
+=======
+                    tablero[y_2][x_2] = tablero[y_1][x_1];
+                    tablero[y_1][x_1] = null;
+>>>>>>> 619c8924a0534c0b92f014b8eec8361e41618bdd
                     turno = false;
                 }else{
                     System.out.println("Movimiento incorrecto");
@@ -121,7 +125,10 @@ public class Ajedrez {
     public static void Imprimir(Object[][] tablero){
         System.out.println("[ ][A][B][C][D][E][F][G][H]");
         for (int i = 0; i < 8; i++) {
+<<<<<<< HEAD
             
+=======
+>>>>>>> 619c8924a0534c0b92f014b8eec8361e41618bdd
             System.out.print("["+i+"]");
             for (int j = 0; j < 8; j++) {
                 
