@@ -1,6 +1,6 @@
 package Ajedrez;
 
-public class Piezas {
+public abstract class Piezas {
     private char id;
     private int x;
     private int y;
@@ -50,10 +50,6 @@ public class Piezas {
         this.color = color;
     }
     
-    
-    
-    public boolean movimiento(int x_i, int y_i, int x_m, int y_m, String[][] tablero){
-
-    }
+    public abstract boolean verifica(String mov);
     
 }
