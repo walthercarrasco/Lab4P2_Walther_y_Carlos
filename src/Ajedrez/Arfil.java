@@ -12,7 +12,7 @@ public class Arfil extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov) {
+    public boolean verifica(String mov, Piezas[][] tablero) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

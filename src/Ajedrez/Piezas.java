@@ -7,7 +7,6 @@ public abstract class Piezas {
     private boolean color;
     
 
-
     public Piezas() {
     }
 
@@ -50,6 +49,6 @@ public abstract class Piezas {
         this.color = color;
     }
     
-    public abstract boolean verifica(String mov);
+    public abstract boolean verifica(String mov, Piezas[][] tablero);
     
 }
