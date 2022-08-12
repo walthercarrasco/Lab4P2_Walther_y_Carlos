@@ -68,7 +68,7 @@ public class Ajedrez {
                 int y_2 = Integer.parseInt(num2);
                 int x_2 = posicion(letra2);
                 
-                if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2)){
+                if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno)){
                     
                     turno = false;
                 }else{
