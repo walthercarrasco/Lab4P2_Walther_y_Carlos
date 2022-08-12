@@ -16,12 +16,5 @@ public class Ajedrez {
         }
     }
     
-    public static void imprimir(String[][] tablero){
-        for(int i = 0; i < tablero.length; i++){
-            for(int j = 0; j < tablero[i].length; j++){
-                System.out.println(tablero[i][j]);
-            }
-            System.out.println();
-        }
-    }
+    
 }

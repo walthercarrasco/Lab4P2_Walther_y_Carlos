@@ -7,4 +7,9 @@ public class Caballo extends Piezas{
         super();
     }
 
+    public Caballo(char id) {
+        super(id);
+    }
+
+    
 }
