@@ -12,7 +12,7 @@ public class Rey extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov, Piezas[][] tablero) {
+    public boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

@@ -14,8 +14,12 @@ public class Peon extends Piezas{
     }
 
     @Override
-    public boolean verifica(String mov, Piezas[][] tablero) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean verifica(String mov, Piezas[][] tablero, int x, int y, int x2, int y2) {
+        char l1 = mov.charAt(0);
+        if((l1 == 'p' || l1 == 'P') && tablero[y][x] instanceof Peon){
+            
+        }
+        return false;
     }
 
     
