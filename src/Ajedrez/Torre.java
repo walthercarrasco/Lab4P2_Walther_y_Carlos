@@ -60,10 +60,8 @@ public class Torre extends Piezas{
                         while(x != x2){
                             
                             if(tablero[y2][x2] == null){
-                                System.out.println("eeeeeeeeeeeeeee");
                             }else{
                                 temporal = false;
-                                System.out.println("AAAAAAAAAAAAAA");
                             }
                             x2--;
 
