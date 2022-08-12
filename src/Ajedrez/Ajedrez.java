@@ -13,7 +13,16 @@ public class Ajedrez {
         boolean salida = true;
         boolean turno = true;
         
+        
+        
         Piezas[][] tablero = new Piezas[8][8];
+        
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                tablero[i][j] = null;
+            }
+        }
+        
         tablero[0][3] = new Dama('q', 3, 0, false);
         tablero[0][4] = new Rey('k', 4, 0, false);
         tablero[0][2] = new Arfil('b', 2, 0, false);
@@ -39,6 +48,7 @@ public class Ajedrez {
         while(salida == true){
             
             if(turno = true){
+                Imprimir(tablero);
                 System.out.print(jugador1+" ingrese el movimiento a realizar: ");
                 String mov = lea.next();
                 String num1 = "";
@@ -71,6 +81,7 @@ public class Ajedrez {
                 
                 turno = true;
             }
+            salida = false;
         }
     }
     public static int posicion(char letra){
@@ -102,7 +113,27 @@ public class Ajedrez {
         return numero;
     }
     
-    public static void Imprimir(){
-        
+    public static void Imprimir(Object[][] tablero){
+        System.out.println("[ ][A][B][C][D][E][F][G][H]");
+        int a = 8;
+        for (int i = 0; i < 8; i++) {
+            
+            System.out.print("["+a+"]");
+            a--;
+            for (int j = 0; j < 8; j++) {
+                
+                if(tablero[i][j] instanceof Piezas){
+                    System.out.print("[");
+                    System.out.print(((Piezas)tablero[i][j]).getId());
+                    System.out.print("]");
+                }else{
+                    System.out.print("[");
+                    System.out.print(" ");
+                    System.out.print("]");
+                }
+                
+            }
+            System.out.println("");
+        }
     }
 }
