@@ -36,7 +36,7 @@ public class Peon extends Piezas{
                         return false;
                     }
                 }else if(turno == false){
-                    if(turno == tablero[y][x].isColor()){
+                    if(turno != tablero[y][x].isColor()){
                         if((tablero[y+1][x] == null && y+1 == y2 && x == x2) || (tablero[y][x].isColor() != tablero[y2][x2].isColor() && y+1 == y2 && x-1 == x2) || (tablero[y][x].isColor() != tablero[y2][x2].isColor() && y+1 == y2 && x+1 == x2)){
                             return true;
                         }else{
