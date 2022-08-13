@@ -47,7 +47,7 @@ public class Ajedrez {
         }
         while(salida == true){
             Imprimir(tablero);
-            if(turno = true){
+            if(turno == true){
                 System.out.print(jugador1+" ingrese el movimiento a realizar: ");
                 String mov = lea.next();
                 String num1 = "";
