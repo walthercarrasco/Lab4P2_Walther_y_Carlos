@@ -46,9 +46,8 @@ public class Ajedrez {
             tablero[6][i] = new Peon('P', i, 6, false);
         }
         while(salida == true){
-            
+            Imprimir(tablero);
             if(turno = true){
-                Imprimir(tablero);
                 System.out.print(jugador1+" ingrese el movimiento a realizar: ");
                 String mov = lea.next();
                 String num1 = "";
@@ -68,8 +67,9 @@ public class Ajedrez {
                 int y_2 = Integer.parseInt(num2);
                 int x_2 = posicion(letra2);
                 
-                if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno)){
-                    
+                if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno) == true){
+                    tablero[y_2][x_2] = tablero[y_1][x_1];
+                    tablero[y_1][x_1] = null;
                     turno = false;
                 }else{
                     System.out.println("Movimiento incorrecto");
@@ -81,7 +81,6 @@ public class Ajedrez {
                 
                 turno = true;
             }
-            salida = false;
         }
     }
     public static int posicion(char letra){
@@ -90,36 +89,33 @@ public class Ajedrez {
             numero = 0;
         }
         if(letra == 'B'){
-            numero = 0;
+            numero = 1;
         }
         if(letra == 'C'){
-            numero = 0;
+            numero = 2;
         }
         if(letra == 'D'){
-            numero = 0;
+            numero = 3;
         }
         if(letra == 'E'){
-            numero = 0;
+            numero = 4;
         }
         if(letra == 'F'){
-            numero = 0;
+            numero = 5;
         }
         if(letra == 'G'){
-            numero = 0;
+            numero = 6;
         }
         if(letra == 'H'){
-            numero = 0;
+            numero = 7;
         }
         return numero;
     }
     
     public static void Imprimir(Object[][] tablero){
         System.out.println("[ ][A][B][C][D][E][F][G][H]");
-        int a = 8;
         for (int i = 0; i < 8; i++) {
-            
-            System.out.print("["+a+"]");
-            a--;
+            System.out.print("["+i+"]");
             for (int j = 0; j < 8; j++) {
                 
                 if(tablero[i][j] instanceof Piezas){
