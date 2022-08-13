@@ -82,9 +82,33 @@ public class Ajedrez {
                 
                 
             }else{
-                
-                
-                turno = true;
+
+                System.out.print(jugador2+" ingrese el movimiento a realizar: ");
+                String mov = lea.next();
+                String num1 = "";
+                String num2 = "";
+
+                char p1 = mov.charAt(0);
+
+                char letra1 = mov.charAt(2);
+                char num_1 = mov.charAt(3);
+                num1 += num_1;
+                int y_1 = Integer.parseInt(num1);
+                int x_1 = posicion(letra1);
+
+                char letra2 = mov.charAt(5);
+                char num_2 = mov.charAt(6);
+                num2 += num_2;
+                int y_2 = Integer.parseInt(num2);
+                int x_2 = posicion(letra2);
+
+                if(tablero[y_1][x_1].verifica(mov, tablero, x_1, y_1, x_2, y_2, turno) == true){
+                    tablero[y_2][x_2] = tablero[y_1][x_1];
+                    tablero[y_1][x_1] = null;
+                    turno = true;
+                }else{
+                    System.out.println("Movimiento incorrecto");
+                }
             }
         }
     }
