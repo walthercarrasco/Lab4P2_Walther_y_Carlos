@@ -90,28 +90,28 @@ public class Ajedrez {
     }
     public static int posicion(char letra){
         int numero = 0;
-        if(letra == 'A'){
+        if(letra == 'A' || letra == 'a'){
             numero = 0;
         }
-        if(letra == 'B'){
+        if(letra == 'B' || letra == 'b'){
             numero = 1;
         }
-        if(letra == 'C'){
+        if(letra == 'C' || letra == 'c'){
             numero = 2;
         }
-        if(letra == 'D'){
+        if(letra == 'D' || letra == 'd'){
             numero = 3;
         }
-        if(letra == 'E'){
+        if(letra == 'E' || letra == 'e'){
             numero = 4;
         }
-        if(letra == 'F'){
+        if(letra == 'F' || letra == 'f'){
             numero = 5;
         }
-        if(letra == 'G'){
+        if(letra == 'G' || letra == 'g'){
             numero = 6;
         }
-        if(letra == 'H'){
+        if(letra == 'H' || letra == 'h'){
             numero = 7;
         }
         return numero;
